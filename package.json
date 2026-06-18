@@ -2,9 +2,15 @@
   "name": "beautyrecord-bot",
   "version": "1.0.0",
   "description": "Telegram Bot + Mini App on Netlify",
-  "main": "netlify/functions/bot.js",
+  "type": "module",
+  "main": "netlify/functions/bot.mjs",
+  "scripts": {
+    "dev": "netlify dev"
+  },
+  "engines": {
+    "node": ">=20"
+  },
   "dependencies": {
-    "@google/genai": "^2.8.0",
     "telegraf": "^4.16.3"
   }
 }

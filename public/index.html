@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manicure & Pedicure Booking</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Запись на маникюр/педикюр</h1>
+    <div class="form-row">
+      <label for="service-select">Выберите услугу:</label>
+      <select id="service-select">
+        <option value="">-- выберите --</option>
+        <option value="manicure">Маникюр (1 час)</option>
+        <option value="pedicure">Педикюр (1 час)</option>
+        <option value="combo">Маникюр + педикюр (2 часа)</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <label for="date-input">Дата:</label>
+      <input type="date" id="date-input" />
+    </div>
+    <div class="form-row">
+      <label for="time-select">Время:</label>
+      <select id="time-select">
+        <option value="">-- выберите дату и услугу --</option>
+      </select>
+    </div>
+    <button id="book-button" disabled>Записаться</button>
+    <div id="confirmation" class="hidden"></div>
+    <hr />
+    <h2>Ваши записи</h2>
+    <ul id="bookings-list"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
