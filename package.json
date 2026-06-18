@@ -3,14 +3,10 @@
   "version": "1.0.0",
   "description": "Telegram Bot + Mini App on Netlify",
   "type": "module",
-  "main": "netlify/functions/bot.mjs",
   "scripts": {
-    "dev": "netlify dev"
+    "build": "echo 'Static build'"
   },
   "engines": {
     "node": ">=20"
-  },
-  "dependencies": {
-    "telegraf": "^4.16.3"
   }
 }

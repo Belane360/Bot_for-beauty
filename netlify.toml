@@ -1,5 +1,5 @@
 [build]
-  command = "echo 'No build step: static Mini App + Netlify Function'"
+  command = "npm run build"
   publish = "public"
 
 [build.environment]
@@ -7,16 +7,3 @@
 
 [functions]
   directory = "netlify/functions"
-  node_bundler = "esbuild"
-
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/netlify/functions/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
-  force = true
