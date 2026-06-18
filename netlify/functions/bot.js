@@ -1,8 +1,8 @@
 const { Telegraf } = require('telegraf');
 const { GoogleGenAI } = require('@google/genai');
 
-const bot = new Telegraf(process.env.8869464220:AAHFUNcTE-rptGPq-Myy7ZdTdwW4BmhGsYk);
-const ai = new GoogleGenAI({ apiKey: process.env.AQ.Ab8RN6K6Fk9UR41b7qDpiYXv-V3XCsyuicuF63dngRKAN9nuGg });
+const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 const SYSTEM_INSTRUCTION = `
 Ты — приветливый и профессиональный администратор студии маникюра "beautyrecord". 
